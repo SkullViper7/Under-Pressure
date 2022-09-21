@@ -7,15 +7,7 @@ public class Player_Test : MonoBehaviour
 {
     [SerializeField] private float speed;
     [SerializeField] private float rotationforce;
-    [SerializeField] private float rotationspeed = 7f;
-
-    private Rigidbody2D rb;
-
-    void Start()
-    {
-        rb = GetComponent<Rigidbody2D>();
-    }
-
+    [SerializeField] private float rotationspeed;
     void Update()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
@@ -27,14 +19,22 @@ public class Player_Test : MonoBehaviour
 
         transform.Translate(movementDirection * speed * inputMagnitude * Time.deltaTime, Space.World);
 
+        float angle = transform.eulerAngles.z;
+
         if (horizontalInput > 0f)
         {
-            transform.Rotate(Vector3.forward * rotationforce * Time.deltaTime);
+            if (angle > 30f)
+            {
+                transform.Rotate(Vector3.back * rotationforce * Time.deltaTime);
+            }
         }
 
         if (horizontalInput < 0f)
         {
-            transform.Rotate(Vector3.back * rotationforce * Time.deltaTime);
+            if (angle < 30f)
+            {
+                transform.Rotate(Vector3.forward * rotationforce * Time.deltaTime);
+            }
         }
 
         else
@@ -43,6 +43,20 @@ public class Player_Test : MonoBehaviour
             transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.identity, rotationspeed * Time.deltaTime);
         }
 
+        var dist = (this.transform.position - Camera.main.transform.position).z;
+
+        var leftBorder = Camera.main.ViewportToWorldPoint(new Vector3(-0.05f, 0, dist)).x;
+        var rightBorder = Camera.main.ViewportToWorldPoint(new Vector3(1.05f, 0, dist)).x;
+        var topBorder = Camera.main.ViewportToWorldPoint(new Vector3(0, -0.05f, dist)).y;
+        var bottomBorder = Camera.main.ViewportToWorldPoint(new Vector3(0, 1.05f, dist)).y;
+
+        Vector3 playerSize = this.gameObject.GetComponent<Renderer>().bounds.size;
+
+        this.transform.position = new Vector3(
+        Mathf.Clamp(this.transform.position.x, leftBorder + playerSize.x / 2, rightBorder - playerSize.x / 2),
+        Mathf.Clamp(this.transform.position.y, topBorder + playerSize.y / 2, bottomBorder - playerSize.y / 2),
+        this.transform.position.z
+        );
 
     }
 }
