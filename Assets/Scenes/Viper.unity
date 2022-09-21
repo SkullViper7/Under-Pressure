@@ -436,7 +436,6 @@ GameObject:
   - component: {fileID: 953706609}
   - component: {fileID: 953706608}
   - component: {fileID: 953706612}
-  - component: {fileID: 953706613}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -568,31 +567,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 953706607}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c9bd5da51bc73f438c282e7913f5b47, type: 3}
+  m_Script: {fileID: 11500000, guid: 11eb0db39ee094d488af269d07cb5cba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationspeed: 360
   speed: 2
---- !u!95 &953706613
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 953706607}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d05821931af8b6047bfa40306de2754f, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  rotationforce: -50
+  rotationspeed: 100
 --- !u!1 &2136460880
 GameObject:
   m_ObjectHideFlags: 0
