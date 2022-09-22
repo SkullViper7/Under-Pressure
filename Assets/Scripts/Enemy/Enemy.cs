@@ -14,6 +14,15 @@ public class Enemy : MonoBehaviour
 
     public states currentState;
     public float speed;
+
+    [Header("Wavy Variables")]
+    public float amplitude;
+    public float period;
+    public float shift;
+    public float yChange;
+    private float newX;
+    private float newY;
+
     private Rigidbody2D myRigidBody;
 
     void Start()
@@ -23,14 +32,17 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
-        switch(currentState)
+        switch (currentState)
         {
             case states.straight:
                 myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, -speed);
 
                 break;
             case states.wavy:
-
+                newY = transform.position.y - yChange;
+                newX = amplitude * Mathf.Sin(period * newY) + shift;
+                Vector2 tempPosition = new Vector2(newX, newY);
+                transform.position = tempPosition;
                 break;
             case states.loop:
 
@@ -38,5 +50,6 @@ public class Enemy : MonoBehaviour
             default:
                 break;
         }
+
     }
 }
