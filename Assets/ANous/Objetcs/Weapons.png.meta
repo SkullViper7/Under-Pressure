@@ -108,10 +108,10 @@ TextureImporter:
       name: Weapons_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 48
-        width: 23
-        height: 16
+        x: 0
+        y: 37
+        width: 29
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -129,10 +129,10 @@ TextureImporter:
       name: Weapons_1
       rect:
         serializedVersion: 2
-        x: 30
-        y: 51
-        width: 23
-        height: 13
+        x: 3
+        y: 50
+        width: 24
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,10 +150,10 @@ TextureImporter:
       name: Weapons_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 37
-        width: 29
-        height: 10
+        x: 30
+        y: 51
+        width: 23
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,10 +171,10 @@ TextureImporter:
       name: Weapons_5
       rect:
         serializedVersion: 2
-        x: 4
-        y: 27
-        width: 26
-        height: 5
+        x: 0
+        y: 25
+        width: 30
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,6 +209,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Weapons_7
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 16
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7748c76da9df1ab45ad9a8e2e3ebd39c
+      internalID: -1181590362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -220,6 +241,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Weapons_7: -1181590362
       Weapons_0: 1348463139
       Weapons_6: -628483081
       Weapons_5: -1493502282
