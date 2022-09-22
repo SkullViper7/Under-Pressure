@@ -20,7 +20,11 @@ MonoBehaviour:
     height: 989
   m_ShowMode: 4
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_Title: Game
+=======
+  m_Title: Project
+>>>>>>> Stashed changes
   m_RootView: {fileID: 7}
 =======
   m_Title: Scene
@@ -54,7 +58,11 @@ MonoBehaviour:
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   controlID: 115
+=======
+  controlID: 104
+>>>>>>> Stashed changes
 --- !u!114 &4
 =======
   controlID: 69
@@ -79,8 +87,8 @@ MonoBehaviour:
 <<<<<<< Updated upstream
     width: 363.19995
     height: 722.8
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 17}
 =======
     width: 454
@@ -115,8 +123,8 @@ MonoBehaviour:
 <<<<<<< Updated upstream
     width: 290.4
     height: 428
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 18}
 =======
     width: 363
@@ -252,7 +260,11 @@ MonoBehaviour:
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   controlID: 116
+=======
+  controlID: 105
+>>>>>>> Stashed changes
 --- !u!114 &11
 =======
   controlID: 88
@@ -282,7 +294,11 @@ MonoBehaviour:
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   controlID: 117
+=======
+  controlID: 106
+>>>>>>> Stashed changes
 --- !u!114 &12
 =======
   controlID: 89
@@ -307,8 +323,8 @@ MonoBehaviour:
 <<<<<<< Updated upstream
     width: 408.00003
     height: 428
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 19}
 =======
     width: 1103
@@ -489,9 +505,13 @@ MonoBehaviour:
     m_SearchArea: 1
     m_Folders:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     - Assets/Prefabs
 =======
     - Assets/Scripts/Enemy
+>>>>>>> Stashed changes
+=======
+    - Assets/Scripts
 >>>>>>> Stashed changes
     m_Globs: []
     m_OriginalText: 
@@ -499,9 +519,13 @@ MonoBehaviour:
   m_StartGridSize: 64
   m_LastFolders:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - Assets/Prefabs
 =======
   - Assets/Scripts/Enemy
+>>>>>>> Stashed changes
+=======
+  - Assets/Scripts
 >>>>>>> Stashed changes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Unity\Projet\SHMUP
@@ -510,6 +534,7 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     m_SelectedIDs: 8e900000
     m_LastClickedID: 37006
     m_ExpandedIDs: 00000000ca8d0000ce8d000000ca9a3b
@@ -517,6 +542,11 @@ MonoBehaviour:
     m_SelectedIDs: be5f0000
     m_LastClickedID: 24510
     m_ExpandedIDs: 00000000b25f0000b45f0000bc5f000000ca9a3b
+>>>>>>> Stashed changes
+=======
+    m_SelectedIDs: 06600000
+    m_LastClickedID: 24582
+    m_ExpandedIDs: 00000000e45f000000ca9a3b
 >>>>>>> Stashed changes
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -545,7 +575,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< Updated upstream
     m_ExpandedIDs: 00000000b25f0000b45f0000
+=======
+    m_ExpandedIDs: 00000000e45f0000
+>>>>>>> Stashed changes
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -674,12 +708,18 @@ MonoBehaviour:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       m_SelectedIDs: 68a40000
       m_LastClickedID: 0
       m_ExpandedIDs: 94c9ffffcecaffffee8d0000008e0000
 =======
       m_SelectedIDs: 5e5f0000
       m_LastClickedID: 24414
+      m_ExpandedIDs: 2efbffff
+>>>>>>> Stashed changes
+=======
+      m_SelectedIDs: e2140000
+      m_LastClickedID: 0
       m_ExpandedIDs: 2efbffff
 >>>>>>> Stashed changes
       m_RenameOverlay:
