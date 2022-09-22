@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player_Movement : MonoBehaviour
 {
     private Rigidbody2D rb;
     private BoxCollider2D coll;
     private SpriteRenderer sprite;
 
-    [SerializeField] private float rotationspeed = 7f;
+    [SerializeField] private float rotationspeed;
     [SerializeField] private float speed;
 
     Vector2 movement;
