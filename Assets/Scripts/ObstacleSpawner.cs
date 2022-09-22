@@ -8,6 +8,12 @@ public class ObstacleSpawner : MonoBehaviour
     public GameObject ObstaclePrefab;
     [SerializeField] private float RespawnTime;
     private Vector2 ScreenBounds;
+    [SerializeField] private float minY;
+    [SerializeField] private float maxY;
+    [SerializeField] private float minX;
+    [SerializeField] private float maxX;
+
+
 
     void Start()
     {
@@ -17,8 +23,9 @@ public class ObstacleSpawner : MonoBehaviour
 
     private void SpawnObstacle()
     {
-        GameObject a = Instantiate(ObstaclePrefab) as GameObject;
-        a.transform.position = new Vector2(ScreenBounds.x * -0.5f, Random.Range(-ScreenBounds.y * -1f, ScreenBounds.y * 3.5f));
+        float Y = Random.Range(minY, maxY);
+        float X = Random.Range(minX, maxX);
+        Instantiate(ObstaclePrefab, transform.position + new Vector3(X, Y, 0), transform.rotation);
     }
 
     IEnumerator ObstacleWave()
