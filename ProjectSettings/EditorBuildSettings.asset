@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Viper.unity
+    guid: 99d44995da1c53a42866b7d95512c1b8
   m_configObjects: {}
