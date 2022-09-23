@@ -246,8 +246,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 273158397}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.077, y: -0.007, z: 0}
-  m_LocalScale: {x: 0.79671, y: 0.79671, z: 0.79671}
+  m_LocalPosition: {x: 0.075, y: -0.001, z: 0}
+  m_LocalScale: {x: 0.77558124, y: 0.77558124, z: 0.77558124}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 733060879}
@@ -295,7 +295,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1237488960, guid: 36f4c064253ff634e87dd7f9a489151f, type: 3}
+  m_Sprite: {fileID: -1181590362, guid: 36f4c064253ff634e87dd7f9a489151f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -320,6 +320,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FirePoint: {fileID: 733060879}
   BulletPrefab: {fileID: 7774155957491871158, guid: b62b7448360a4024abdf16676e94c127, type: 3}
+  RateOfFire: 0.2
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -428,7 +429,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 733060878}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.043, y: 0.002, z: 0}
+  m_LocalPosition: {x: 0.106, y: 0.007, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -514,8 +515,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 738892705}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.89, y: -3.62, z: -0.01277446}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -1.89, y: -3.62, z: -0.012774}
+  m_LocalScale: {x: 1.7588671, y: 1.7588671, z: 1.7588671}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

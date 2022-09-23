@@ -8,13 +8,19 @@ public class Weapon : MonoBehaviour
     public Transform FirePoint;
     public GameObject BulletPrefab;
 
+    [SerializeField] private float RateOfFire;
+
     void Update()
     {
         transform.rotation = Quaternion.identity;
 
         if (Input.GetButtonDown("Fire1"))
         {
-            Shoot(); 
+            InvokeRepeating("Shoot", .001f, RateOfFire);
+        }
+        if (Input.GetButtonUp("Fire1"))
+        {
+            CancelInvoke("Shoot");
         }
     }
 

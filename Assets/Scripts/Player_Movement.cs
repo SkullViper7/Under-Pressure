@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public class Player_Movement : MonoBehaviour
 {
     [SerializeField] private float speed;
     [SerializeField] private float rotationforce;
     [SerializeField] private float rotationspeed;
+
     void Update()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
