@@ -4,42 +4,22 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    Rigidbody2D rb;
-
-    public float xSpeed;
-    public float ySpeed;
-
-    public bool canShoot;
-    public float fireRate;
-    public float health;
+    private Rigidbody rb2D;
 
     void Awake()
     {
-        rb = GetComponent <Rigidbody2D>();
+        
     }
 
-    
-
+    // Start is called before the first frame update
     void Start()
     {
         
     }
 
+    // Update is called once per frame
     void Update()
     {
-        rb.velocity = new Vector2(xSpeed, ySpeed);
-    }
-
-    private void OnTriggerEnter2D(Collider2D col)
-    {
-        if (col.gameObject.tag == "Player")
-        {
-            Die();
-        }
-    }
-
-    void Die()
-    {
-        Destroy(gameObject);
+        
     }
 }

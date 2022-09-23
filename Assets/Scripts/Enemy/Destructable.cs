@@ -13,7 +13,7 @@ public class Destructable : MonoBehaviour
 
     void Update()
     {
-        if (transform.position.x < 1.18f)
+        if (transform.position.x < 1.19)
         {
             canBeDestroyed = true;
         }
@@ -22,7 +22,7 @@ public class Destructable : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Bullet bullet = collision.GetComponent<Bullet>();
-        if (bullet != null)
+        if (canBeDestroyed == true && bullet != null)
         {
             Destroy(gameObject);
             Destroy(bullet.gameObject);

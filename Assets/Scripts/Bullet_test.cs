@@ -18,7 +18,7 @@ public class Bullet_test : MonoBehaviour
 
     private void Update()
     {
-        if (transform.position.x > 1.23)
+        if (transform.position.x > 1.24)
         {
             Destroy(gameObject);
         }
