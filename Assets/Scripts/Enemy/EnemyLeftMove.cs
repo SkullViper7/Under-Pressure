@@ -20,7 +20,7 @@ public class EnemyLeftMove : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //Movement left
+
         Vector2 pos = transform.position;
 
         pos.x -= moveSpeed * Time.fixedDeltaTime;

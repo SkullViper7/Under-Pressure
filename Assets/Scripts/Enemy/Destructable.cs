@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class Destructable : MonoBehaviour
 {
+    Player_Movement player_Movement;
+    [SerializeField] private GameObject player;
     bool canBeDestroyed = false;
     [SerializeField] private float hp;
 
-    void Start()
+    void Awake()
     {
-        
+        player_Movement = player.GetComponent<Player_Movement>();
     }
 
     void Update()
@@ -38,7 +40,7 @@ public class Destructable : MonoBehaviour
         Player_Movement player = collision.GetComponent<Player_Movement>();
         if (player != null)
         {
-            Playerhp = Playerhp - 1;
+            player_Movement.Playerhp = player_Movement.Playerhp - 1;
         }
     }
 }

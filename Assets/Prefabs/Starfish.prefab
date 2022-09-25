@@ -130,6 +130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75e223f285806714194e2631cf6ed653, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 5318244391023211985, guid: 7745b3c1d85fb364dbaa2f55cc4eac1d, type: 3}
   hp: 3
 --- !u!50 &7971034305386725893
 Rigidbody2D:

@@ -7,7 +7,7 @@ public class Player_Movement : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private float rotationforce;
     [SerializeField] private float rotationspeed;
-    public float Playerhp = 5;
+    public float Playerhp;
 
     void Update()
     {
