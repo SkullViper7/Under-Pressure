@@ -10,24 +10,23 @@ public class Weapon : MonoBehaviour
     public GameObject BulletPrefab;
 
     [SerializeField] private float FireRate;
-    private float NextFire;
 
-    void Update()
+    private void Update()
     {
         transform.rotation = Quaternion.identity;
 
-        if (Input.GetButtonDown("Fire1") && Time.time > NextFire)
+        if (Input.GetButtonDown("Fire1"))
         {
-            NextFire = Time.time + FireRate;
             InvokeRepeating("Shoot", .001f, FireRate);
         }
+
         if (Input.GetButtonUp("Fire1"))
         {
             CancelInvoke("Shoot");
         }
-
     }
-    void Shoot()
+
+    private void Shoot()
     {
         Instantiate(BulletPrefab, FirePoint.position, FirePoint.rotation);
     }
