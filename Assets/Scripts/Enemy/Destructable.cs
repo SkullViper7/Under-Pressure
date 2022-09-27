@@ -25,7 +25,7 @@ public class Destructable : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //Collision avec le projectil du joueur
-        Bullet bullet = collision.GetComponent<Bullet>();
+        Bullet_test bullet = collision.GetComponent<Bullet_test>();
         if (canBeDestroyed == true && bullet != null)
         {
             hp = hp - 1;

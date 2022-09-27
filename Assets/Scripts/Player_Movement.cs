@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.AssetImporters;
 using UnityEngine;
 
 public class Player_Movement : MonoBehaviour
@@ -9,9 +10,15 @@ public class Player_Movement : MonoBehaviour
     [SerializeField] private float rotationspeed;
     public float Playerhp;
 
+    GameObject shield;
+
+    private void Start()
+    {
+        shield = transform.Find("Shield").gameObject;
+    }
 
     void Update()
-    {
+    {   //Déplacements
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 
@@ -21,6 +28,7 @@ public class Player_Movement : MonoBehaviour
 
         transform.Translate(movementDirection * speed * inputMagnitude * Time.deltaTime, Space.World);
 
+        //Rotation
         if (horizontalInput != 0)
         {
             transform.Rotate(Vector3.forward * (rotationforce * Mathf.Sign(-horizontalInput)) * Time.deltaTime);
@@ -35,6 +43,7 @@ public class Player_Movement : MonoBehaviour
             transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.identity, rotationspeed * Time.deltaTime);
         }
 
+        //Screenbounds
         var dist = (this.transform.position - Camera.main.transform.position).z;
 
         var leftBorder = Camera.main.ViewportToWorldPoint(new Vector3(-0.05f, 0, dist)).x;
@@ -57,4 +66,46 @@ public class Player_Movement : MonoBehaviour
         }
 
     }
+
+    void ActivateShield()
+    {
+        shield.SetActive(true);
+    }
+
+    void DeactivateShield()
+    {
+        shield.SetActive(false);
+    }
+
+    bool HasShield()
+    {
+        return shield.activeSelf;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Enemy_Movement enemy = collision.GetComponent<Enemy_Movement>();
+        if (enemy != null)
+        {
+            if (HasShield())
+            {
+                DeactivateShield();
+            }
+            else
+            {
+                Playerhp -= 1f;
+            }
+        }
+
+        Bonus bonus = collision.GetComponent<Bonus>();
+        if (bonus)
+        {
+            if (bonus.activateShield)
+            {
+                ActivateShield();
+            }
+            Destroy(bonus.gameObject);
+        }
+    }
+
 }

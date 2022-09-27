@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Bonus : MonoBehaviour
 {
+
+    public bool activateShield;
+    public bool addGuns;
     void Start()
     {
         

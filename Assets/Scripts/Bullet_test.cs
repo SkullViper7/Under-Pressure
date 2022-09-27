@@ -26,7 +26,11 @@ public class Bullet_test : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Destroy(gameObject);
+        Enemy_Movement enemy = collision.GetComponent<Enemy_Movement>();
+        if (enemy != null)
+        {
+            Destroy(gameObject);
+        }
     }
 
 }
