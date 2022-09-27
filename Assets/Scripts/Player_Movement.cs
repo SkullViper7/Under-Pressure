@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.AssetImporters;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -87,7 +86,7 @@ public class Player_Movement : MonoBehaviour
             }
             else
             {
-                Playerhp -= 1f;
+
             }
         }
 

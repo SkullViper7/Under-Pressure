@@ -7,7 +7,6 @@ public class EnemyBullet : MonoBehaviour
     [SerializeField] float Speed;
     private Rigidbody2D rb;
     private Vector2 ScreenBounds;
-    bool canShoot = false;
 
     void Start()
     {
