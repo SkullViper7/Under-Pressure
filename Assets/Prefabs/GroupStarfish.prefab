@@ -60,7 +60,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2166239262730030095, guid: 4bb7e314ccb940d4fa2928b9d557f7b7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.635
+      value: 3.648
       objectReference: {fileID: 0}
     - target: {fileID: 2166239262730030095, guid: 4bb7e314ccb940d4fa2928b9d557f7b7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -96,7 +96,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5400314578906971018, guid: 4bb7e314ccb940d4fa2928b9d557f7b7, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 0.11
+      value: 0.09
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4bb7e314ccb940d4fa2928b9d557f7b7, type: 3}
@@ -130,7 +130,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2166239262730030095, guid: 4bb7e314ccb940d4fa2928b9d557f7b7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.634
+      value: 3.648
       objectReference: {fileID: 0}
     - target: {fileID: 2166239262730030095, guid: 4bb7e314ccb940d4fa2928b9d557f7b7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -166,11 +166,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5400314578906971018, guid: 4bb7e314ccb940d4fa2928b9d557f7b7, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 0.12
+      value: 0.09
       objectReference: {fileID: 0}
     - target: {fileID: 5400314578906971018, guid: 4bb7e314ccb940d4fa2928b9d557f7b7, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 0.11
+      value: 0.09
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4bb7e314ccb940d4fa2928b9d557f7b7, type: 3}
@@ -266,7 +266,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2166239262730030095, guid: 4bb7e314ccb940d4fa2928b9d557f7b7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.639
+      value: 3.648
       objectReference: {fileID: 0}
     - target: {fileID: 2166239262730030095, guid: 4bb7e314ccb940d4fa2928b9d557f7b7, type: 3}
       propertyPath: m_LocalPosition.z
