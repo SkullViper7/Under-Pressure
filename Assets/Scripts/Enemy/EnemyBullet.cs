@@ -28,8 +28,7 @@ public class EnemyBullet : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision)
     {
         Player_Movement player = collision.GetComponent<Player_Movement>();
-        Shield shield = collision.GetComponent<Shield>();
-        if (player != null || shield != null)
+        if (player != null)
         {
             Destroy(gameObject);
         }

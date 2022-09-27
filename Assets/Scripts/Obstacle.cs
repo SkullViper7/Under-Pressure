@@ -10,6 +10,7 @@ public class Obstacle : MonoBehaviour
 
     void Start()
     {
+        Debug.Log("screenbounds" + ScreenBounds);
         rb = GetComponent<Rigidbody2D>();
         rb.velocity = new Vector2(-Speed, 0);
         ScreenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
@@ -17,7 +18,7 @@ public class Obstacle : MonoBehaviour
 
     void Update()
     {
-        if(transform.position.x < ScreenBounds.x * 2.7f)
+        if(transform.position.x < ScreenBounds.x * -2)
         {
             Destroy(gameObject);
         }

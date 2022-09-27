@@ -11,6 +11,7 @@ public class Player_Movement : MonoBehaviour
 
     public static Player_Movement player_Movement;
     GameObject shield;
+    [SerializeField] GameObject deathScreen;
 
     private void Start()
     {
@@ -61,7 +62,8 @@ public class Player_Movement : MonoBehaviour
 
         if (GameManager.gameManager._playerHealth.Health <= 0)
         {
-            Destroy(gameObject);
+            ActiveDeathScreen();
+            Time.timeScale = 0;
         }
 
     }
@@ -93,9 +95,10 @@ public class Player_Movement : MonoBehaviour
             Destroy(bonus.gameObject);
         }
 
+        Obstacle obstacle = collision.GetComponent<Obstacle>();
         EnemyLeftMove enemy = collision.GetComponent<EnemyLeftMove>();
         EnemyBullet enemyBullet = collision.GetComponent<EnemyBullet>();
-        if (enemy != null || enemyBullet != null)
+        if (enemy != null || enemyBullet != null || obstacle != null)
         {
             if (HasShield())
             {
@@ -115,7 +118,10 @@ public class Player_Movement : MonoBehaviour
         GameManager.gameManager._playerHealth.DmgUnit(dmg);
     }
 
-
+    private void ActiveDeathScreen()
+    {
+        deathScreen.SetActive(true);
+    }
 
 
 }
