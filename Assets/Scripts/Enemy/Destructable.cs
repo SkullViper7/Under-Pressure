@@ -30,17 +30,9 @@ public class Destructable : MonoBehaviour
             Destroy(gameObject);
         }
 
-        //Collision entre l'ennemi et le joueur
-        Player_Movement player = collision.GetComponent<Player_Movement>();
-        if (player != null)
-        {
-            PlayerTakeDmg(1);
-            Debug.Log(GameManager.gameManager._playerHealth.Health);
-        }
     }
 
-    private void PlayerTakeDmg(int dmg)
-    {
-        GameManager.gameManager._playerHealth.DmgUnit(dmg);
-    }
 }
+
+
+
