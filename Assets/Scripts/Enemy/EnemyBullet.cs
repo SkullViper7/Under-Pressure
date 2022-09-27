@@ -7,7 +7,6 @@ public class EnemyBullet : MonoBehaviour
     [SerializeField] float Speed;
     private Rigidbody2D rb;
     private Vector2 ScreenBounds;
-    bool canShoot = false;
 
     void Start()
     {
@@ -29,7 +28,8 @@ public class EnemyBullet : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision)
     {
         Player_Movement player = collision.GetComponent<Player_Movement>();
-        if (player != null)
+        Shield shield = collision.GetComponent<Shield>();
+        if (player != null || shield != null)
         {
             Destroy(gameObject);
         }

@@ -10,6 +10,7 @@ public class Player_Movement : MonoBehaviour
     [SerializeField] private float rotationforce;
     [SerializeField] private float rotationspeed;
 
+    public static Player_Movement player_Movement;
     GameObject shield;
 
     private void Start()
@@ -66,31 +67,18 @@ public class Player_Movement : MonoBehaviour
         shield.SetActive(true);
     }
 
-    void DeactivateShield()
+    public void DeactivateShield()
     {
         shield.SetActive(false);
     }
 
-    bool HasShield()
+    public bool HasShield()
     {
         return shield.activeSelf;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Enemy_Movement enemy = collision.GetComponent<Enemy_Movement>();
-        if (enemy != null)
-        {
-            if (HasShield())
-            {
-                DeactivateShield();
-            }
-            else
-            {
-                Playerhp -= 1f;
-            }
-        }
-
         Bonus bonus = collision.GetComponent<Bonus>();
         if (bonus)
         {
@@ -100,6 +88,30 @@ public class Player_Movement : MonoBehaviour
             }
             Destroy(bonus.gameObject);
         }
+
+        EnemyLeftMove enemy = collision.GetComponent<EnemyLeftMove>();
+        EnemyBullet enemyBullet = collision.GetComponent<EnemyBullet>();
+        if (enemy != null || enemyBullet != null)
+        {
+            if (HasShield())
+            {
+                DeactivateShield();
+                Destroy(enemyBullet.gameObject);
+            }
+            else
+            {
+                PlayerTakeDmg(1);
+                Debug.Log(GameManager.gameManager._playerHealth.Health);
+            }
+        }
+
     }
+    private void PlayerTakeDmg(int dmg)
+    {
+        GameManager.gameManager._playerHealth.DmgUnit(dmg);
+    }
+
+
+
 
 }
