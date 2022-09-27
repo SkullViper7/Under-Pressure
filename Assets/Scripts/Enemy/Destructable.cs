@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class Destructable : MonoBehaviour
 {
-    [SerializeField] private GameObject player;
     bool canBeDestroyed = false;
     [SerializeField] private float hp = 5;
 
