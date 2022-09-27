@@ -60,6 +60,11 @@ public class Player_Movement : MonoBehaviour
         this.transform.position.z
         );
 
+        if (GameManager.gameManager._playerHealth.Health <= 0)
+        {
+            Destroy(gameObject);
+        }
+
     }
 
     void ActivateShield()
