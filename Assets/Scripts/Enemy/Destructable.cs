@@ -1,18 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml.Linq;
 using UnityEngine;
 
 public class Destructable : MonoBehaviour
 {
-    Player_Movement player_Movement;
     [SerializeField] private GameObject player;
     bool canBeDestroyed = false;
-    [SerializeField] private float hp;
-
-    void Awake()
-    {
-        player_Movement = player.GetComponent<Player_Movement>();
-    }
+    [SerializeField] private float hp = 5;
 
     void Update()
     {
@@ -40,7 +35,13 @@ public class Destructable : MonoBehaviour
         Player_Movement player = collision.GetComponent<Player_Movement>();
         if (player != null)
         {
-            player_Movement.Playerhp = player_Movement.Playerhp - 1;
+            PlayerTakeDmg(1);
+            Debug.Log(GameManager.gameManager._playerHealth.Health);
         }
+    }
+
+    private void PlayerTakeDmg(int dmg)
+    {
+        GameManager.gameManager._playerHealth.DmgUnit(dmg);
     }
 }
