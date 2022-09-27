@@ -1,13 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player_Movement : MonoBehaviour
 {
     [SerializeField] private float speed;
     [SerializeField] private float rotationforce;
     [SerializeField] private float rotationspeed;
-    public float Playerhp;
 
 
     void Update()
@@ -49,12 +49,6 @@ public class Player_Movement : MonoBehaviour
         Mathf.Clamp(this.transform.position.y, topBorder + playerSize.y / 2, bottomBorder - playerSize.y / 2),
         this.transform.position.z
         );
-
-        //Vie du joueur
-        if (Playerhp <= 0)
-        {
-            Destroy(gameObject);
-        }
 
     }
 }
