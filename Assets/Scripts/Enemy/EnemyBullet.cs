@@ -34,4 +34,9 @@ public class EnemyBullet : MonoBehaviour
         }
     }
 
+    private void PlayerTakeDmg(int dmg)
+    {
+        GameManager.gameManager._playerHealth.DmgUnit(dmg);
+    }
+
 }
