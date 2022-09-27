@@ -36,13 +36,12 @@ public class Destructable : MonoBehaviour
         if (player != null)
         {
             PlayerTakeDmg(1);
-            Debug.Log("Osef");
+            Debug.Log(GameManager.gameManager._playerHealth.Health);
         }
     }
 
     private void PlayerTakeDmg(int dmg)
     {
-        PlayerBehavior.playerBehavior._playerHealth.DmgUnit(dmg);
-        Debug.Log(PlayerBehavior.playerBehavior._playerHealth.Health);
+        GameManager.gameManager._playerHealth.DmgUnit(dmg);
     }
 }
