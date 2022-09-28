@@ -13,7 +13,8 @@ public class Player_Movement : MonoBehaviour
     public static Player_Movement player_Movement;
     GameObject shield;
     [SerializeField] private GameObject bomb;
-    [SerializeField] private GameObject bave;
+    [SerializeField] private GameObject wave;
+    [SerializeField] private GameObject pistol;
     [SerializeField] private GameObject deathScreen;
 
     private bool death;
@@ -21,6 +22,9 @@ public class Player_Movement : MonoBehaviour
     private void Start()
     {
         shield = transform.Find("Shield").gameObject;
+        bomb = transform.Find("Canon").gameObject;
+        wave = transform.Find("WaveCharger").gameObject;
+        pistol = transform.Find("Pistol").gameObject;
     }
 
     void Update()
@@ -91,12 +95,31 @@ public class Player_Movement : MonoBehaviour
 
     public void ActivateBomb()
     {
-        
+        bomb.SetActive(true);
     }
 
-    private void ActivateWave()
+    public void DeactivateBomb()
     {
+        bomb.SetActive(false);
+    }
+    public void ActivateWave()
+    {
+        wave.SetActive(true);
+    }
 
+    public void DeactivateWave()
+    {
+        wave.SetActive(false);
+    }
+
+    public void ActivePistol()
+    {
+        pistol.SetActive(true);
+    }
+
+    public void DeactivatePistol()
+    {
+        pistol.SetActive(false);
     }
 
     //Collisions avec le joueur
@@ -113,11 +136,15 @@ public class Player_Movement : MonoBehaviour
             if (bonus.addPowerUpBomb)
             {
                 ActivateBomb();
+                DeactivateWave();
+                DeactivatePistol();
             }
 
             if (bonus.addPowerUpWave)
             {
                 ActivateWave();
+                DeactivateBomb();
+                DeactivatePistol();
             }
 
             Destroy(bonus.gameObject);

@@ -748,7 +748,7 @@ MonoBehaviour:
   - {fileID: 4387714795049083755, guid: 87da700bee235604e9c4aabdbfbb777a, type: 3}
   - {fileID: 8479012751311095864, guid: a460f0990e256254798ae9af7f89465c, type: 3}
   - {fileID: 2430666879372800371, guid: d8d399852670aca4b89473651308e12e, type: 3}
-  RespawnTime: 10
+  RespawnTime: 1
   minY: -0.3
   maxY: 0.6
   minX: 0
@@ -901,6 +901,14 @@ PrefabInstance:
     - target: {fileID: 2281550906974235567, guid: 9940b894423100f488298dce308058c0, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2281550907469583825, guid: 9940b894423100f488298dce308058c0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.117
+      objectReference: {fileID: 0}
+    - target: {fileID: 2281550907469583825, guid: 9940b894423100f488298dce308058c0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.001
       objectReference: {fileID: 0}
     - target: {fileID: 2281550907474547888, guid: 9940b894423100f488298dce308058c0, type: 3}
       propertyPath: m_IsActive
