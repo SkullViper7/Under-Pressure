@@ -27,7 +27,7 @@ public class EnemyLeftMove : MonoBehaviour
 
         pos.x -= moveSpeed * Time.fixedDeltaTime;
 
-        if (Freeze == true && transform.position.x < 1.15)
+        if (Freeze == true && transform.position.x <= 0)
         {
             moveSpeed = 0;
             animator.Play("PufferFishAnim");
@@ -43,8 +43,12 @@ public class EnemyLeftMove : MonoBehaviour
 
     public void Explode()
     {
-        Transform transforme = transform;
-        Instantiate(BulletPrefab, transform.position, transforme.rotation);
+        for (int i = 0; i < 8; i++)
+        {
+            Transform transforme = transform;
+            Instantiate(BulletPrefab, transform.position, transforme.rotation);
+            transforme.Rotate(0, 0, 45);
+        }
         Destroy(gameObject);
     }
 }

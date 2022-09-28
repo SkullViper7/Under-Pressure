@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Play : MonoBehaviour
+public class MainMenu : MonoBehaviour
 {
-    public void play()
+    public void mainMenu()
     {
-        SceneManager.LoadScene("Viper");
-        Time.timeScale = 1;
+        SceneManager.LoadScene("MainMenu");
     }
 }

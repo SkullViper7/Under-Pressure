@@ -18,7 +18,7 @@ public class EnemyBullet : MonoBehaviour
 
     private void Update()
     {
-        if (transform.position.x < -1.9)
+        if (transform.position.x < -1.9 || transform.position.x > 1.5 || transform.position.y > 1 || transform.position.y <-1)
         {
             Destroy(gameObject);
         }
