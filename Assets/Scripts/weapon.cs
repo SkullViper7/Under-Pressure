@@ -7,7 +7,9 @@ public class Weapon : MonoBehaviour
 {
 
     public Transform FirePoint;
-    public GameObject BulletPrefab;
+    [SerializeField] private GameObject BulletPrefab;
+    [SerializeField] private GameObject[] weaponFiring;
+
 
     [SerializeField] private float FireRate;
     private float t;

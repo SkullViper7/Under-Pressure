@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class Bonus : MonoBehaviour
 {
-
+    [SerializeField] float speed;
     public bool activateShield;
-    public bool addGuns;
+    public bool addPowerUpBomb;
+    public bool addPowerUpWave;
     void Start()
     {
         
@@ -14,7 +15,18 @@ public class Bonus : MonoBehaviour
 
     void Update()
     {
-      
+        Vector2 pos = transform.position;
+
+        pos.x -= speed * Time.fixedDeltaTime;
+
+
+        if (pos.x < -2)
+        {
+            Destroy(gameObject);
+        }
+
+        transform.position = pos;
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

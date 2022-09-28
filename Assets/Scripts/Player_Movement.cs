@@ -11,7 +11,11 @@ public class Player_Movement : MonoBehaviour
 
     public static Player_Movement player_Movement;
     GameObject shield;
-    [SerializeField] GameObject deathScreen;
+    [SerializeField] private GameObject bomb;
+    [SerializeField] private GameObject bave;
+    [SerializeField] private GameObject deathScreen;
+
+    private bool death;
 
     private void Start()
     {
@@ -60,8 +64,10 @@ public class Player_Movement : MonoBehaviour
         this.transform.position.z
         );
 
-        if (GameManager.gameManager._playerHealth.Health <= 0)
+        //Mort Joueur
+        if (GameManager.gameManager._playerHealth.Health <= 0 && !death)
         {
+            death = true;
             ActiveDeathScreen();
             Time.timeScale = 0;
         }
@@ -83,6 +89,17 @@ public class Player_Movement : MonoBehaviour
         return shield.activeSelf;
     }
 
+    public void ActivateBomb()
+    {
+        
+    }
+
+    private void ActivateWave()
+    {
+
+    }
+
+    //Collisions avec le joueur
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Bonus bonus = collision.GetComponent<Bonus>();
@@ -92,6 +109,17 @@ public class Player_Movement : MonoBehaviour
             {
                 ActivateShield();
             }
+
+            if (bonus.addPowerUpBomb)
+            {
+                ActivateBomb();
+            }
+
+            if (bonus.addPowerUpWave)
+            {
+                ActivateWave();
+            }
+
             Destroy(bonus.gameObject);
         }
 

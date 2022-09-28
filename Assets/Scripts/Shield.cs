@@ -5,8 +5,6 @@ using UnityEngine;
 public class Shield : MonoBehaviour
 {
 
-    public SpriteRenderer sr;
-
     void Update()
     {
         transform.rotation = Quaternion.identity;
