@@ -7,6 +7,8 @@ public class EnemyLeftMove : MonoBehaviour
     //Movement left
     public float moveSpeed = 5;
     [SerializeField] private bool Freeze = false;
+    public Animator animator;
+    public GameObject BulletPrefab;
 
     void Start()
     {
@@ -28,6 +30,7 @@ public class EnemyLeftMove : MonoBehaviour
         if (Freeze == true && transform.position.x < 1.15)
         {
             moveSpeed = 0;
+            animator.Play("PufferFishAnim");
         }
 
         if (pos.x < -2)
@@ -36,5 +39,12 @@ public class EnemyLeftMove : MonoBehaviour
         }
 
         transform.position = pos;
+    }
+
+    public void Explode()
+    {
+        Transform transforme = transform;
+        Instantiate(BulletPrefab, transform.position, transforme.rotation);
+        Destroy(gameObject);
     }
 }
