@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Player_Movement : MonoBehaviour
@@ -68,8 +69,7 @@ public class Player_Movement : MonoBehaviour
         if (GameManager.gameManager._playerHealth.Health <= 0 && !death)
         {
             death = true;
-            ActiveDeathScreen();
-            Time.timeScale = 0;
+            SceneManager.LoadScene("GameOver");
         }
 
     }

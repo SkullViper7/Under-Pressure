@@ -3,13 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Weapon : MonoBehaviour
+public class Canon : MonoBehaviour
 {
 
     public Transform FirePoint;
-    [SerializeField] private GameObject BulletPrefab;
-    [SerializeField] private GameObject[] weaponFiring;
-
+    [SerializeField] private GameObject BombPrefab;
 
     [SerializeField] private float FireRate;
     private float t;
@@ -23,7 +21,7 @@ public class Weapon : MonoBehaviour
     {
         transform.rotation = Quaternion.identity;
 
-        if ((Input.GetButtonDown("Fire1") || Input.GetButton("Fire1") ) && t >= FireRate)
+        if ((Input.GetButtonDown("Fire1") || Input.GetButton("Fire1")) && t >= FireRate)
         {
             t = 0;
             Shoot();
@@ -39,6 +37,6 @@ public class Weapon : MonoBehaviour
 
     private void Shoot()
     {
-        Instantiate(BulletPrefab, FirePoint.position, FirePoint.rotation);
+        Instantiate(BombPrefab, FirePoint.position, FirePoint.rotation);
     }
 }
