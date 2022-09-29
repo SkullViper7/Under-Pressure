@@ -24,7 +24,7 @@ public class PortalLeftMove : MonoBehaviour
 
         pos.x -= moveSpeed * Time.fixedDeltaTime;
 
-        if (pos.x < -3)
+        if (pos.x < -4)
         {
             Destroy(gameObject);
         }
