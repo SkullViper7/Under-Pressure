@@ -4,21 +4,20 @@ using UnityEngine;
 
 public class BombExplode : MonoBehaviour
 {
-    [SerializeField] private float ExplosionTime = 1;
+    public Animator animator;
 
     void Start()
     {
-        StartCoroutine(SelfDestruct());
+
     }
 
     void Update()
     {
-        
+        animator.Play("ExplosionAnim");
     }
 
-    IEnumerator SelfDestruct()
+    public void SelfDestruct()
     {
-        yield return new WaitForSeconds(ExplosionTime);
         Destroy(gameObject);
     }
 }
