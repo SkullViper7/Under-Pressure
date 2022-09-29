@@ -11,6 +11,7 @@ public class BulletMenu : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        rb.velocity = transform.right * Speed;
         ScreenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
     }
 
@@ -18,24 +19,15 @@ public class BulletMenu : MonoBehaviour
     {
         Vector2 pos = transform.position;
 
-        pos.x -= Speed * Time.fixedDeltaTime;
+        //pos.x -= Speed * Time.fixedDeltaTime;
 
         if (pos.x < -2)
         {
             Destroy(gameObject);
         }
 
-        transform.position = pos;
+        //transform.position = pos;
 
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        Enemy_Movement enemy = collision.GetComponent<Enemy_Movement>();
-        if (enemy != null)
-        {
-            Destroy(gameObject);
-        }
     }
 
 }

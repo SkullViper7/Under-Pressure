@@ -171,7 +171,7 @@ MonoBehaviour:
   moveSpeed: 0.3
   Freeze: 1
   animator: {fileID: 3561387269422498864}
-  BulletPrefab: {fileID: 7774155957491871158, guid: 2a6d9bf56222dbd489cd1dcfcb69e9d6, type: 3}
+  BulletPrefab: {fileID: 7774155957491871158, guid: 32d6b39437c35b14782557e60b77c400, type: 3}
 --- !u!114 &8001697584485990827
 MonoBehaviour:
   m_ObjectHideFlags: 0

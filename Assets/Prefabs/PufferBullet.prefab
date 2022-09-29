@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 7774155957491871159}
   - component: {fileID: 7774155957491871154}
   - component: {fileID: -776411736624655143}
-  - component: {fileID: 4336096489739575137}
+  - component: {fileID: 2215611191255940208}
   m_Layer: 0
-  m_Name: EnemyBullet
+  m_Name: PufferBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 2041229159, guid: f6007fc1cc9cf1f44886b86f3c24d44b, type: 3}
+  m_Sprite: {fileID: -2124758021, guid: f6007fc1cc9cf1f44886b86f3c24d44b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 2
---- !u!61 &4336096489739575137
+--- !u!61 &2215611191255940208
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -134,16 +134,16 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00026398897, y: -0.0047518015}
+  m_Offset: {x: 0.00024938583, y: -0.00024926662}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.07}
+    oldSize: {x: 0.19, y: 0.05}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.12934387, y: 0.03937602}
+  m_Size: {x: 0.15057921, y: 0.029541254}
   m_EdgeRadius: 0
