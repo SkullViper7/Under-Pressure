@@ -7,7 +7,7 @@ public class Play : MonoBehaviour
 {
     public void play()
     {
-        SceneManager.LoadScene("Viper");
+        SceneManager.LoadScene("Sub-Sora_Second_Scene");
         Time.timeScale = 1;
     }
 }

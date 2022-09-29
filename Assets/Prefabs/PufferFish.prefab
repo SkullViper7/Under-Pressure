@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3561387269422498869}
   - component: {fileID: 3561387269422498864}
   - component: {fileID: 3561387269422498865}
+  - component: {fileID: 8001697584485990827}
   m_Layer: 0
   m_Name: PufferFish
   m_TagString: Untagged
@@ -171,3 +172,18 @@ MonoBehaviour:
   Freeze: 1
   animator: {fileID: 3561387269422498864}
   BulletPrefab: {fileID: 7774155957491871158, guid: 2a6d9bf56222dbd489cd1dcfcb69e9d6, type: 3}
+--- !u!114 &8001697584485990827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3561387269422498870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75e223f285806714194e2631cf6ed653, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Explosion: 1
+  hp: 3
+  animator: {fileID: 3561387269422498864}

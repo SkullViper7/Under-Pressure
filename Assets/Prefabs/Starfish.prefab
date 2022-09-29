@@ -103,6 +103,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 0.7
   Freeze: 0
+  animator: {fileID: 0}
+  BulletPrefab: {fileID: 0}
 --- !u!114 &2166239262730030092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,7 +132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75e223f285806714194e2631cf6ed653, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 3
+  hp: 1
 --- !u!50 &7971034305386725893
 Rigidbody2D:
   serializedVersion: 4

@@ -5,8 +5,10 @@ using UnityEngine;
 
 public class Destructable : MonoBehaviour
 {
+    [SerializeField] private bool Explosion = false;
     bool canBeDestroyed = false;
     [SerializeField] private float hp = 5;
+    public Animator animator;
 
     void Update()
     {
@@ -27,7 +29,14 @@ public class Destructable : MonoBehaviour
         }
         if (hp <= 0)
         {
-            Destroy(gameObject);
+            if (Explosion == true)
+            {
+                animator.Play("PufferFishAnim");
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
         }
 
     }
