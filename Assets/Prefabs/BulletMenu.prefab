@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 7774155957491871156}
   - component: {fileID: 7774155957491871159}
   - component: {fileID: 7774155957491871154}
-  - component: {fileID: 5419297032507000150}
   - component: {fileID: 4711794128141112921}
+  - component: {fileID: -4648264812480590293}
   m_Layer: 0
-  m_Name: Bullet
+  m_Name: BulletMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,14 +27,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7774155957491871158}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: -3.318, y: -3.556, z: -0.7667484}
-  m_LocalScale: {x: 0.86809146, y: 0.86809146, z: 0.86809146}
+  m_LocalScale: {x: 0.50746024, y: 0.50746024, z: 0.50746024}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!212 &7774155957491871159
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -108,19 +108,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &5419297032507000150
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7774155957491871158}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93c20c4b57dc8e341a438d32c7efe966, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Speed: 5
 --- !u!61 &4711794128141112921
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -147,3 +134,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.2423899, y: 0.08}
   m_EdgeRadius: 0
+--- !u!114 &-4648264812480590293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7774155957491871158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49b67350642d38e45817b78a7881b71c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speed: 2

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 36f4c064253ff634e87dd7f9a489151f
+guid: 65211e3502d4e5540a7a416f655171ff
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -67,8 +67,8 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 64
-    resizeAlgorithm: 0
+    maxTextureSize: 256
+    resizeAlgorithm: 1
     textureFormat: -1
     textureCompression: 0
     compressionQuality: 50
@@ -105,127 +105,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Weapons_0
+      name: crosshair_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 37
-        width: 29
-        height: 15
+        x: 77
+        y: 77
+        width: 46
+        height: 46
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 945eed1f9e96b464bb40596f800dea5e
-      internalID: 1348463139
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Weapons_1
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 50
-        width: 24
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 074e81f4c1171d54f95627732cc63179
-      internalID: 367732101
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Weapons_2
-      rect:
-        serializedVersion: 2
-        x: 34
-        y: 51
-        width: 16
-        height: 9
-      alignment: 9
-      pivot: {x: 0.22542167, y: 0.39658016}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 46a0fa2d207e6824daa210b275196c75
-      internalID: -1237488960
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Weapons_5
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 25
-        width: 30
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ebf7fa8cfade70f498e98893af5911dc
-      internalID: -1493502282
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Weapons_6
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 27
-        width: 31
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f65a816b71c375e4397a6dfccbca12ab
-      internalID: -628483081
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Weapons_7
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 16
-        width: 15
-        height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7748c76da9df1ab45ad9a8e2e3ebd39c
-      internalID: -1181590362
+      spriteID: 72e26597713ad04468611665fdb0a90e
+      internalID: -1789098387
       vertices: []
       indices: 
       edges: []
@@ -233,7 +128,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: e467e9c14e069bc4ea50d3cb82b32dfb
+    spriteID: 1a97356c6191eed4caf5a13be5576777
     internalID: 0
     vertices: []
     indices: 
@@ -241,14 +136,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Weapons_7: -1181590362
-      Weapons_0: 1348463139
-      Weapons_6: -628483081
-      Weapons_5: -1493502282
-      Weapons_1: 367732101
-      Weapons_4: -1744762182
-      Weapons_2: -1237488960
-      Weapons_3: -448176322
+      crosshair_0: -1789098387
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
