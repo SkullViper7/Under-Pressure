@@ -452,6 +452,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 90, y: -180, z: 0}
+--- !u!4 &261167287 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1602893881777729057, guid: 9940b894423100f488298dce308058c0, type: 3}
+  m_PrefabInstance: {fileID: 7516370222089322112}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &365914414
 GameObject:
   m_ObjectHideFlags: 0
@@ -1498,6 +1503,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 874971499}
   m_CullTransparentMesh: 1
+--- !u!1 &1032367675 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2611552996478816857, guid: 9940b894423100f488298dce308058c0, type: 3}
+  m_PrefabInstance: {fileID: 7516370222089322112}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1032367677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032367675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38d99e04a14a5184c9910a0c825833bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FirePoint: {fileID: 261167287}
+  BulletPrefab: {fileID: 4365498417953373782, guid: a15374d6108ca2e40926504eb8795c6d, type: 3}
+  FireRate: 0.5
 --- !u!1 &1223423308
 GameObject:
   m_ObjectHideFlags: 0
@@ -2203,7 +2228,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1779235668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2317,7 +2342,7 @@ MonoBehaviour:
   - {fileID: 1675108791}
   - {fileID: 1429920214}
   fullHeart: {fileID: -1963617502, guid: d9ad14a4707c08f4f9492e48a97c2407, type: 3}
-  emptyHeart: {fileID: 519961641, guid: 168f41aea52c2a54796cea9bc3e9dc74, type: 3}
+  emptyHeart: {fileID: 1014211821, guid: 9f04dc53100471942adbb70301861294, type: 3}
 --- !u!82 &1780588117
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2517,6 +2542,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1602893881777729057, guid: 9940b894423100f488298dce308058c0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.077
+      objectReference: {fileID: 0}
     - target: {fileID: 2281550906974235558, guid: 9940b894423100f488298dce308058c0, type: 3}
       propertyPath: hitDelay
       value: 0.5
@@ -2529,6 +2558,14 @@ PrefabInstance:
       propertyPath: deathSound
       value: 
       objectReference: {fileID: 1780588117}
+    - target: {fileID: 2281550907474547888, guid: 9940b894423100f488298dce308058c0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2611552996478816857, guid: 9940b894423100f488298dce308058c0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7516370221136697071, guid: 9940b894423100f488298dce308058c0, type: 3}
       propertyPath: m_Name
       value: Player

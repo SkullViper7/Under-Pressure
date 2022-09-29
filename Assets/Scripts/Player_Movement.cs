@@ -78,7 +78,10 @@ public class Player_Movement : MonoBehaviour
         if (GameManager.gameManager._playerHealth.Health <= 0 && !death)
         {
             death = true;
-            deathSound.Play();
+            if (deathSound != null)
+            {
+                deathSound.Play();
+            }
             SceneManager.LoadScene("GameOver");
         }
 
@@ -174,7 +177,11 @@ public class Player_Movement : MonoBehaviour
             {
                 PlayerTakeDmg(1);
                 Debug.Log(GameManager.gameManager._playerHealth.Health);
-                hitSound.Play();
+                if (hitSound != null)
+                {
+                    hitSound?.Play();
+                }
+                
                 hitLast = Time.time;
             }
 
