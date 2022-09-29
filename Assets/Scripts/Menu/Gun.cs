@@ -10,12 +10,15 @@ public class Gun : MonoBehaviour
     [SerializeField] private GameObject BulletMenuPrefab;
     [SerializeField] private float rotationforce;
     [SerializeField] private float FireRate;
+    public Player player;
 
     private float t;
+
 
     private void Start()
     {
         t = FireRate;
+
     }
 
     private void Update()
@@ -35,12 +38,14 @@ public class Gun : MonoBehaviour
         
         float verticalInput = Input.GetAxis("Vertical");
 
+
         if (verticalInput != 0)
         {
             transform.Rotate(Vector3.forward * (rotationforce * Mathf.Sign(-verticalInput)) * Time.deltaTime);
             float angle = transform.eulerAngles.z;
             if (angle > 180)
                 angle = angle - 360f;
+
             transform.eulerAngles = new Vector3(0, 0, Mathf.Clamp(angle, -45f, 45f));
         }
     }

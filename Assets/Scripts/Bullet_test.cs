@@ -7,7 +7,6 @@ public class Bullet_test : MonoBehaviour
     [SerializeField] float Speed;
     private Rigidbody2D rb;
     private Vector2 ScreenBounds;
-
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -22,15 +21,6 @@ public class Bullet_test : MonoBehaviour
             Destroy(gameObject);
         }
 
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        EnemyLeftMove enemy = collision.GetComponent<EnemyLeftMove>();
-        if (enemy != null)
-        {
-            Destroy(gameObject);
-        }
     }
 
 }

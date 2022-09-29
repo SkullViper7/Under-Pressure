@@ -7,9 +7,11 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb;
     private SpriteRenderer sprite; 
     private Animator anim;
+    [SerializeField]
     private float dirX = 0f;
     [SerializeField] private float movespeed;
-    private bool facingRight = true;
+    public bool facingRight = true;
+    public static Player player;
 
     private enum Movementstate { idle, walk }
 
@@ -32,17 +34,11 @@ public class Player : MonoBehaviour
     {
         Movementstate state;
 
-        if (dirX > 0f && facingRight)
+        if (dirX != 0)
         {
             state = Movementstate.walk;
-            Flip();
         }
 
-        else if (dirX < 0f && !facingRight)
-        {
-            state = Movementstate.walk;
-            Flip();
-        }
 
         else
         {
@@ -50,12 +46,7 @@ public class Player : MonoBehaviour
         }
 
         anim.SetInteger("state", (int)state);
-
+        Debug.Log(state);
     }
 
-    private void Flip()
-    {
-        facingRight = !facingRight;
-        transform.Rotate(0f, 180f, 0f);
-    }
 }
