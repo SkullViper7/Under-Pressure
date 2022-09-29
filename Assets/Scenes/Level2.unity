@@ -1259,11 +1259,11 @@ PrefabInstance:
     - target: {fileID: 2281550906974235558, guid: 9940b894423100f488298dce308058c0, type: 3}
       propertyPath: hitSound
       value: 
-      objectReference: {fileID: 2281550906157809425}
+      objectReference: {fileID: 0}
     - target: {fileID: 2281550906974235558, guid: 9940b894423100f488298dce308058c0, type: 3}
       propertyPath: deathSound
       value: 
-      objectReference: {fileID: 2281550906157809426}
+      objectReference: {fileID: 0}
     - target: {fileID: 2281550906974235558, guid: 9940b894423100f488298dce308058c0, type: 3}
       propertyPath: deathScreen
       value: 

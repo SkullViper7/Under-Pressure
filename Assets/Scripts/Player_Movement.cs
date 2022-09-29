@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Analytics;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -74,14 +75,23 @@ public class Player_Movement : MonoBehaviour
         );
 
         //Mort Joueur
+        Scene scene = SceneManager.GetActiveScene();
         if (GameManager.gameManager._playerHealth.Health <= 0 && !death)
         {
             death = true;
-            if (deathSound != null)
+            //if (deathSound != null)
+            //{
+                //deathSound.Play();
+            //}
+            if (scene.name == "Level1")
             {
-                deathSound.Play();
+                SceneManager.LoadScene("GameOver");
             }
-            SceneManager.LoadScene("GameOver");
+            if (scene.name == "Level2")
+            {
+                SceneManager.LoadScene("GameOver 1");
+            }
+
         }
 
     }
