@@ -28,7 +28,7 @@ public class Player : MonoBehaviour
         rb.velocity = new Vector2(dirX * movespeed, rb.velocity.y);
 
         UpdateAnimationState();
-
+        
     }
     private void UpdateAnimationState()
     {
@@ -48,5 +48,5 @@ public class Player : MonoBehaviour
         anim.SetInteger("state", (int)state);
         Debug.Log(state);
     }
-
+    
 }

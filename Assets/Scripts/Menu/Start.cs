@@ -11,7 +11,7 @@ public class Start : MonoBehaviour
         BulletMenu bulletMenu = collision.GetComponent<BulletMenu>();
         if (bulletMenu)
         {
-            SceneManager.LoadScene("Viper");
+            SceneManager.LoadScene("Level1");
         }
     }
 }

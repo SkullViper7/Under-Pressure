@@ -1003,7 +1003,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f06971d96301eab48a11051d42bd971a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObstaclePrefab: {fileID: 3076918564432368626, guid: eafee9211b6f58743a9b00fb71b425ee, type: 3}
+  ObstaclePrefab: {fileID: 3076918564432368626, guid: 8ef948f966c2a804abaa4bb25661d6f9, type: 3}
   RespawnTime: 7
   minY: -0.4
   maxY: 0.7
@@ -1348,7 +1348,7 @@ MonoBehaviour:
   - {fileID: 682538657}
   - {fileID: 212779489}
   fullHeart: {fileID: -1963617502, guid: d9ad14a4707c08f4f9492e48a97c2407, type: 3}
-  emptyHeart: {fileID: 519961641, guid: 168f41aea52c2a54796cea9bc3e9dc74, type: 3}
+  emptyHeart: {fileID: 1014211821, guid: 9f04dc53100471942adbb70301861294, type: 3}
 --- !u!82 &2281550906157809425
 AudioSource:
   m_ObjectHideFlags: 0

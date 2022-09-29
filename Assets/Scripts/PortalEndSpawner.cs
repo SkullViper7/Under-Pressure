@@ -12,10 +12,17 @@ public class PortalEndSpawner : MonoBehaviour
     [SerializeField] private float minX;
     [SerializeField] private float maxX;
 
+    [SerializeField] private GameObject spawnPoint;
     void Start()
     {
+        spawnPoint = transform.Find("SpawnPoint").gameObject;
         ScreenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
         StartCoroutine(ObstacleWave());
+    }
+
+    private void DeactivateSpawn()
+    {
+        spawnPoint.SetActive(false);
     }
 
     private void SpawnObstacle()
@@ -23,6 +30,7 @@ public class PortalEndSpawner : MonoBehaviour
         float Y = Random.Range(minY, maxY);
         float X = Random.Range(minX, maxX);
         Instantiate(EnemyPrefab, transform.position + new Vector3(X, Y, 0), transform.rotation);
+        DeactivateSpawn();
     }
 
     IEnumerator ObstacleWave()

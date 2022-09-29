@@ -11,7 +11,7 @@ public class ChangeLevel : MonoBehaviour
         Player_Movement player = collision.GetComponent<Player_Movement>();
         if (player != null)
         {
-            SceneManager.LoadScene("Viper");
+            SceneManager.LoadScene("Level2");
         }
     }
 }

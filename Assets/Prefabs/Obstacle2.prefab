@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 3076918564432368636}
   - component: {fileID: 3076918564432368637}
   - component: {fileID: 3076918564432368638}
-  - component: {fileID: 3076918564432368639}
   - component: {fileID: 3076918564432368633}
   - component: {fileID: 2112718992841810999}
+  - component: {fileID: 6638265568604819894}
   m_Layer: 0
-  m_Name: Obstacle
+  m_Name: Obstacle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -109,22 +109,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!58 &3076918564432368639
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3076918564432368626}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.0031410456, y: -0.004397746}
-  serializedVersion: 2
-  m_Radius: 0.039922122
 --- !u!114 &3076918564432368633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153,3 +137,29 @@ MonoBehaviour:
   Explosion: 0
   hp: 1
   animator: {fileID: 0}
+--- !u!61 &6638265568604819894
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3076918564432368626}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0049819276, y: 0.019927979}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.22, y: 0.15}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.21003614, y: 0.07028866}
+  m_EdgeRadius: 0

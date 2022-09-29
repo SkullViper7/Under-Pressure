@@ -15,7 +15,6 @@ public class Player_Movement : MonoBehaviour
     [SerializeField] private GameObject bomb;
     [SerializeField] private GameObject wave;
     [SerializeField] private GameObject pistol;
-    [SerializeField] private GameObject deathScreen;
 
     private float hitLast = 0;
     [SerializeField] private float hitDelay = 5;
@@ -192,11 +191,6 @@ public class Player_Movement : MonoBehaviour
     private void PlayerTakeDmg(int dmg)
     {
         GameManager.gameManager._playerHealth.DmgUnit(dmg);
-    }
-
-    private void ActiveDeathScreen()
-    {
-        deathScreen.SetActive(true);
     }
 
 
