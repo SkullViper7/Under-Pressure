@@ -781,7 +781,7 @@ GameObject:
   - component: {fileID: 799169120}
   - component: {fileID: 799169119}
   - component: {fileID: 799169118}
-  - component: {fileID: 799169117}
+  - component: {fileID: 799169122}
   m_Layer: 5
   m_Name: Retry
   m_TagString: Untagged
@@ -789,18 +789,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &799169117
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 799169116}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10b51c0433f1cdf4f887e08f0962aa2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &799169118
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -845,9 +833,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 7a3f484466d6d064eb40846fa897b385, type: 3}
-        m_TargetAssemblyTypeName: Play, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 799169122}
+        m_TargetAssemblyTypeName: Play1, Assembly-CSharp
+        m_MethodName: play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -916,6 +904,18 @@ RectTransform:
   m_AnchoredPosition: {x: -622, y: -373}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &799169122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799169116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3f484466d6d064eb40846fa897b385, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &880744504
 GameObject:
   m_ObjectHideFlags: 0

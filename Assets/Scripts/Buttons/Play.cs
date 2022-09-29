@@ -7,7 +7,7 @@ public class Play : MonoBehaviour
 {
     public void play()
     {
-        SceneManager.LoadScene("Level 1");
+        SceneManager.LoadScene("Level1");
         Time.timeScale = 1;
     }
 }
