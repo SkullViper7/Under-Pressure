@@ -22,21 +22,21 @@ public class Destructable : MonoBehaviour
     {
         //Collision avec le projectil du joueur
         Bullet_test bullet = collision.GetComponent<Bullet_test>();
-        if (canBeDestroyed == true && bullet != null)
+        BombAmmo bomb = collision.GetComponent<BombAmmo>();
+        if (canBeDestroyed == true)
         {
-            hp = hp - 1;
-            Destroy(bullet.gameObject);
+            if (bullet != null || bomb != null)
+            {
+                hp = hp - 1;
+                if (Explosion == true)
+                {
+                    animator.Play("PufferFishAnim");
+                }
+            }
         }
         if (hp <= 0)
         {
-            if (Explosion == true)
-            {
-                animator.Play("PufferFishAnim");
-            }
-            else
-            {
-                Destroy(gameObject);
-            }
+            Destroy(gameObject);
         }
 
     }

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet_test : MonoBehaviour
+public class BombAmmo : MonoBehaviour
 {
     [SerializeField] float Speed;
     private Rigidbody2D rb;

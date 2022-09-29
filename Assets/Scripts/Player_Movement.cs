@@ -17,6 +17,11 @@ public class Player_Movement : MonoBehaviour
     [SerializeField] private GameObject pistol;
     [SerializeField] private GameObject deathScreen;
 
+    private float hitLast = 0;
+    [SerializeField] private float hitDelay = 5;
+    [SerializeField] private AudioSource hitSound;
+    [SerializeField] private AudioSource deathSound;
+
     private bool death;
 
     private void Start()
@@ -73,6 +78,7 @@ public class Player_Movement : MonoBehaviour
         if (GameManager.gameManager._playerHealth.Health <= 0 && !death)
         {
             death = true;
+            deathSound.Play();
             SceneManager.LoadScene("GameOver");
         }
 
@@ -155,16 +161,24 @@ public class Player_Movement : MonoBehaviour
         EnemyBullet enemyBullet = collision.GetComponent<EnemyBullet>();
         if (enemy != null || enemyBullet != null || obstacle != null)
         {
+            if (Time.time - hitLast < hitDelay)
+                return;
+
             if (HasShield())
             {
                 DeactivateShield();
                 Destroy(enemyBullet.gameObject);
+                hitLast = Time.time;
             }
             else
             {
                 PlayerTakeDmg(1);
                 Debug.Log(GameManager.gameManager._playerHealth.Health);
+                hitSound.Play();
+                hitLast = Time.time;
             }
+
+
         }
 
     }
