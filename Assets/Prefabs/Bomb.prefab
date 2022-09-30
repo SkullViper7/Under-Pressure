@@ -137,3 +137,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 3
+  ExplosionPrefab: {fileID: 1098250756739097711, guid: c31cbef279414044a9c386193d8cb41d, type: 3}
+  bombPoint: {fileID: 3127183068046283891}
