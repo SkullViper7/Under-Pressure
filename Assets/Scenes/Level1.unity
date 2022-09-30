@@ -1054,7 +1054,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObstaclePrefab: {fileID: 3076918564432368626, guid: eafee9211b6f58743a9b00fb71b425ee, type: 3}
-  RespawnTime: 7
+  RespawnTime: 5
   minY: -0.4
   maxY: 0.7
   minX: 0
@@ -1622,6 +1622,10 @@ PrefabInstance:
     - target: {fileID: 6480079132234157029, guid: 3e74f05abe3bcb64099ed750d06e0ca3, type: 3}
       propertyPath: m_Name
       value: LevelLoader
+      objectReference: {fileID: 0}
+    - target: {fileID: 6480079132234157029, guid: 3e74f05abe3bcb64099ed750d06e0ca3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e74f05abe3bcb64099ed750d06e0ca3, type: 3}

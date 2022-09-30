@@ -748,6 +748,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelLoader
       objectReference: {fileID: 0}
+    - target: {fileID: 6480079132234157029, guid: 3e74f05abe3bcb64099ed750d06e0ca3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e74f05abe3bcb64099ed750d06e0ca3, type: 3}
 --- !u!1 &1254498753 stripped
@@ -1148,6 +1152,7 @@ GameObject:
   - component: {fileID: 1779235671}
   - component: {fileID: 1779235673}
   - component: {fileID: 1779235672}
+  - component: {fileID: 1779235674}
   m_Layer: 0
   m_Name: SpawnPoint
   m_TagString: Untagged
@@ -1222,9 +1227,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StarfishPrefab: {fileID: 4511210553934910289, guid: 8b977d31bdbfdff4687020fbe1177edc, type: 3}
-  RespawnTime: 5
+  RespawnTime: 4
   minY: -0.3
   maxY: 0.3
+  minX: 0
+  maxX: 0
+--- !u!114 &1779235674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779235667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00989993b097d4f4aa72eccd8a21fe07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyPrefab: {fileID: 2166239262730030088, guid: 39d3b5719a0828a40b066a6043ef9b59, type: 3}
+  RespawnTime: 3
+  minY: -0.45
+  maxY: 0.4
   minX: 0
   maxX: 0
 --- !u!4 &1790879653 stripped
@@ -1434,6 +1457,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 657869481, guid: 5a4d389e2f1031e4e8ac28c445746ec8, type: 3}
+    - target: {fileID: 2439814091065115819, guid: 9940b894423100f488298dce308058c0, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2611552996478816857, guid: 9940b894423100f488298dce308058c0, type: 3}
       propertyPath: m_IsActive
       value: 0

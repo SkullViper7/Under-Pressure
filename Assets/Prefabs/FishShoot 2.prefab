@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Explosion: 0
-  hp: 1
+  hp: 2
   animator: {fileID: 0}
 --- !u!58 &1382619737330956052
 CircleCollider2D:
