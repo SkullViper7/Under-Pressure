@@ -7,8 +7,6 @@ public class BombAmmo : MonoBehaviour
     [SerializeField] float Speed;
     private Rigidbody2D rb;
     private Vector2 ScreenBounds;
-    [SerializeField] private GameObject ExplosionPrefab;
-    public Transform bombPoint;
 
     void Start()
     {
@@ -25,18 +23,4 @@ public class BombAmmo : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        EnemyLeftMove enemy = collision.GetComponent<EnemyLeftMove>();
-        if (enemy != null)
-        {
-            Explode();
-            Destroy(gameObject);
-        }
-    }
-
-    private void Explode()
-    {
-        Instantiate(ExplosionPrefab, bombPoint.position, bombPoint.rotation);
-    }
 }

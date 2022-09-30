@@ -136,6 +136,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3832f40a646319548905d36dc4d2e75b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 0.2
-  ExplosionPrefab: {fileID: 1098250756739097711, guid: c31cbef279414044a9c386193d8cb41d, type: 3}
-  bombPoint: {fileID: 3127183068046283891}
+  Speed: 3

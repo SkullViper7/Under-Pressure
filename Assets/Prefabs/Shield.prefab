@@ -147,9 +147,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab9fa513e999de446b4f43222fbcb3ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.05
+  speed: 0.1
   activateShield: 1
-  addGuns: 0
+  addPowerUpBomb: 0
+  addPowerUpWave: 0
 --- !u!114 &3827898618493849824
 MonoBehaviour:
   m_ObjectHideFlags: 0
