@@ -750,7 +750,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6480079132234157029, guid: 3e74f05abe3bcb64099ed750d06e0ca3, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e74f05abe3bcb64099ed750d06e0ca3, type: 3}
@@ -953,7 +953,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyPrefab: {fileID: 727822598660289032, guid: ccf3696a833c7d34fbe917b370cd2b91, type: 3}
-  RespawnTime: 60
+  RespawnTime: 45
   minY: 0
   maxY: 0
   minX: 0
