@@ -700,7 +700,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyPrefab: {fileID: 727822598660289032, guid: abba23c50b64f454bb5d1cf7ce8015fd, type: 3}
-  RespawnTime: 60
+  RespawnTime: 45
   minY: 0
   maxY: 0
   minX: 0

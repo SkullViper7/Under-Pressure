@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 3076918564432368636}
   - component: {fileID: 3076918564432368637}
   - component: {fileID: 3076918564432368638}
-  - component: {fileID: 3076918564432368633}
   - component: {fileID: 2112718992841810999}
   - component: {fileID: 6638265568604819894}
+  - component: {fileID: 6569282568711161200}
   m_Layer: 0
   m_Name: Obstacle1
   m_TagString: Untagged
@@ -109,19 +109,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &3076918564432368633
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3076918564432368626}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6da01522d1841443aa9a699049504f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Speed: 1.5
 --- !u!114 &2112718992841810999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -163,3 +150,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.21003616, y: 0.0702889}
   m_EdgeRadius: 0
+--- !u!114 &6569282568711161200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3076918564432368626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a98ae505d923174d8a4b647ea834ad4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 1.5
+  Freeze: 0
+  animator: {fileID: 0}
+  BulletPrefab: {fileID: 0}
